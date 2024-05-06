@@ -1,0 +1,144 @@
+:root {
+  --main-color: #55527c;
+  --text-color: #130f49;
+  --yellow-color: #ff972d;
+  --blue-color: #a5a6ff;
+  --background-color:#e8f9f5;
+  --sidebar-background:#fff;
+  --font-inter: "Inter", sans-serif;
+  --font-karla: "Karla", sans-serif;
+  --font-kristi: "Kristi", cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-karla);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  background-color: var(--sidebar-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 50px 0;
+}
+
+.sidebar-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sidebar-profile-pic{
+  width: 77px;
+  height: 77px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--blue-color);
+}
+
+.sidebar-profile-pic img{
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sidebar nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:50px 0;
+  padding: 0;
+}
+
+.sidebar nav li{
+  margin-bottom: 15px;
+}
+
+.sidebar nav a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sidebar-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.fa{
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: var(--text-color);
+  background-color: rgba(19, 15, 73, 0.05);
+}
+
+.home-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding: 30px; */
+}
+
+.home-desc{
+  flex:0 0 50%;
+  padding: 30px;
+}
+
+.home-desc-title{
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 72px;
+  /* margin: 0; */
+  margin-bottom: 30px
+}
+
+.home-desc-title h1{
+  margin: 0;
+}
+
+.home-desc-title span{
+  color: var(--blue-color);
+}
+
+.home-desc-para{
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-color);
+  max-width: 70%;
+  margin-bottom: 30px;
+}
+
+.home-image{
+  width: 50%;
+}
+
+.home-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.home-desc-contacts{
+  border-left: 4px solid var(--yellow-color);
+  padding: 0 16px;
+}
